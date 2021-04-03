@@ -1,0 +1,45 @@
+* {
+        box-sizing:border-box;
+        margin: 0px;
+        padding: 0px;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    padding: 10px;
+    width: 100%;
+    min-height: 1000px;
+    overflow: hidden;
+    position: relative;  
+    display: flex;
+    justify-content: space-evenly;
+}
+.stone {
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+}
+  
+.active { 
+    border: 2px dashed black;
+}
+
+#red {
+    background-color: rgb(218, 45, 45);
+}
+#green {
+    background-color: rgb(89, 219, 89);
+}
+#blue {
+    background-color: rgb(40, 40, 230);
+}
+#yellow {
+    background-color: rgb(245, 245, 60);
+}
+#pink {
+    background-color: rgb(248, 104, 128);
+}
+#purple {
+    background-color: rgb(90, 18, 90);
+}

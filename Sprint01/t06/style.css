@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.super_hero {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px;
+    color: palevioletred;
+}
+
+.help {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.row label .checkmark{
+    text-transform: uppercase;
+    user-select: none;
+    text-align: center;
+    padding: 20px 15px;
+    border: 1.5px solid gray;
+    border-radius: 25px;
+    background: white;
+    color: gray;
+}
+
+input[type=checkbox]:checked + .checkmark::after,
+input[type=checkbox]:checked + .checkmark  {
+    background-color: #212a4c;
+    color: white;
+    content: "\2003✓";
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid rgb(128, 128, 128, .6);
+    height: 30px;
+    padding: 13px;
+    font-size: 19px;
+    width:100%;
+    margin: 10px 20px;
+}
+
+.input_job {
+    display: flex;
+}
+.input_name_email {
+    display: flex;
+    justify-content: space-evenly;
+}
+.send_button_div {
+    display: flex;
+    justify-content: center;
+}
+
+.send_button {
+    width: 100%;
+    margin: 10px 20px;
+    height: 50px;
+    font-size: 21px;
+    font-weight: bold;
+    outline-width: 0;
+    border: none;
+    color: #fff;
+    background-color: rgb(233, 145, 189);
+    cursor: pointer;
+}
+.send_button:hover {
+    transition: 1s ease-in-out;
+    background-color: rgb(187, 92, 139);
+}

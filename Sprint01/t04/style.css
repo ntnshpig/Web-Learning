@@ -1,0 +1,35 @@
+.topic_name {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(43, 198, 226);
+}
+.topic {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.subtopic {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+@media (min-width: 1024px) {
+    .subtopic {
+        flex: 0 0 21%;
+    }
+}
+
+@media  (min-width: 768px)  and (max-width: 1023px){
+    .subtopic {
+        flex: 0 0 44%;
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 767px){
+    .subtopic {
+        flex: 0 0 92%;
+    }
+}

@@ -1,0 +1,12 @@
+.formula {
+    float: left;
+    margin: 1em;
+    height: 100px;
+}
+
+@media print {
+    .formula {
+        float: none;
+        margin: 1em;
+    }
+}

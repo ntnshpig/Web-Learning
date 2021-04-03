@@ -1,0 +1,56 @@
+* {
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background: lightgray;
+  margin: 0% 5%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.left {
+  display:flex;
+  flex-flow: column;
+  min-width: 180px;
+  font-size: large;
+  font-weight:550;
+  border-right: 2px solid azure;
+}
+
+.left div {
+  transition: 0.3s;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.right, .actors, .poster { 
+  display: flex; 
+}
+
+.right {
+  padding: 10px 5px 5px 20px;
+}
+
+.actors span {
+  margin: 10px 5px;
+  padding: 5px;
+  background-color: rgb(79, 79, 235);
+  color: white;
+  border-radius: 5px;
+}
+
+.poster_image {
+  width: 210px;
+  height: 330px;
+  margin-bottom: 70px;
+  margin-left: 10px;
+}

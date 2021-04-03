@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <meta name="viewport" content="t10. Settings">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Settings</h1> 
+    <div class="main_center">
+        <div class="settings">  
+            <div class="left_bar">
+                <div class="typeface_div">
+                    <span>Typeface</span>
+                    <input list="fonts" name="font" class="menu-content_left-list">
+                    <datalist id="fonts">
+                        <option value="Acunim Pro"></option>
+                        <option value="Comic Suns"></option>
+                        <option value="Times New Roman"></option>
+                    </datalist>
+                </div>
+                <div class="weight_div">
+                    <span>Weight</span>
+                    <div class="menu-content_left-checkboxes">
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_1">
+                            <span class="checkmark" for="check_1">Regular</span> 
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_2">
+                            <span class="checkmark" for="check_2">Bold</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="size_div">
+                    <span>Size</span>
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                    <div class="about_range">
+                        <span>A</span>
+                        <span>A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rigth_bar">
+                <div class="menu-content_right-dark_theme">
+                    <span class="name">Dark UI</span>
+                    <label>
+                        <input type="checkbox" class="custom_checkbox check_3">
+                        <span class="toggler" for="check_3"></span>
+                    </label>
+                </div>
+                <div class="menu-content_right-colorpicker">
+                    <span class="name">Color</span>
+                    <div class="colors">
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_4">
+                            <span class="color red" for="check_4"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_5">
+                            <span class="color green" for="check_5"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_6">
+                            <span class="color black" for="check_6"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_7">
+                            <span class="color purpure" for="check_7"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom_checkbox check_8">
+                            <span class="color brown" for="check_8"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chose_bar">
+            <ul class="icon_list">
+                <li><img src="assets/images/artistic-brush.png" alt="icon" class="icon"></li>
+                <li><img src="assets/images/computer-screen.png" alt="icon" class="icon"></li>
+                <li><img src="assets/images/sms-speech-bubble.png" alt="icon" class="icon"></li>
+                <li><img src="assets/images/user-icon.png" alt="icon" class="icon"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

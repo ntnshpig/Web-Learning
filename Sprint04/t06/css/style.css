@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  margin: 5px;
+}
+
+.count {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+}
+
+.text {
+  background: red;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

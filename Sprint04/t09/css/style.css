@@ -1,0 +1,60 @@
+* {
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+main div{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.buttons_div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 42%;
+}
+.buttons_div button {
+  margin: 0px 5px;
+  padding: 10px;
+  border-style: none;
+  color: white;
+  border-radius: 5px;
+}
+.add_strg {
+  background-color: rgb(70, 184, 230);
+}
+.clear_strg {
+  background-color: rgba(173, 173, 173, 0.8);
+}
+
+.input_div, .output_div {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(173, 173, 173, 0.8);
+  width: 40%;
+  padding: 15px;
+}
+
+.input_div span, .output_div span {
+  margin: 10px 0px;
+  color: rgb(30, 175, 233);
+}
+
+.text_input , .output {
+  border: 2px solid rgb(30, 175, 233);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}

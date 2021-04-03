@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    position: absolute;
+    transition: .8s ease-in-out;
+    top:35%;
+}
+
+.image:hover {
+    transform: rotate(-35deg);
+}

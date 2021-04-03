@@ -1,0 +1,15 @@
+body, form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+form {
+    margin: 10px;
+}
+.input_url {
+    width: 220px;
+}
+img {
+    width: 700px;
+    height: 700px;
+}

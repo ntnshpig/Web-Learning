@@ -1,0 +1,51 @@
+.content  {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+img {
+    position: relative;
+    height: 182px;
+    bottom: 68px;
+}
+.spd_image {
+    bottom: 46px;
+}
+.superhero {
+    margin-top: -4px;
+    margin-right: 5px;
+    position: relative;
+    text-align: end;
+    color: white;
+    font-size: 12px;
+}
+.real_name {
+    margin-top: -7px;
+    margin-right: 5px;
+    position: relative;
+    text-align: end;
+    color: rgba(255, 255,255, 0.5);
+    font-size: 9px;
+}
+#cap_am,  #iron_man, #blk_widow, #spd_man{
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-family: Verdana;
+    width: 270px;
+    height: 140px;
+}
+#cap_am {
+    background: linear-gradient(#4568DC, #B06AB3);
+}
+#iron_man {
+    background: linear-gradient(#e52d27, #b31217);
+}
+#blk_widow {
+    background: linear-gradient(#000, #61045F);
+}
+#spd_man {
+    background: linear-gradient(#e52d27, #000);
+}

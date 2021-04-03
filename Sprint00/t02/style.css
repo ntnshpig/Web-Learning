@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+#find_input {
+    width: 100%;
+}
+#find_input:hover, #find_btn:hover {
+    color: red;
+}
+#find_input , #find_btn {
+    box-sizing: border-box;
+    height: 2em;
+    padding: 0px, 10px;
+    color: green;
+}

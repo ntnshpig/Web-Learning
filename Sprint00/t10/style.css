@@ -1,0 +1,36 @@
+.weather_bar {
+    display: flex;
+    flex-flow: row wrap;
+}
+.weather_bar > div {
+    margin-left: 5px;
+}
+img {
+    position: relative;
+    left: 10px;
+    height: 70px;
+    width: 100px;
+}
+.date {
+    margin-top: -2px;
+    background: rgb(78, 168, 204);
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-family: Lato Bold (700);
+    font-size: 1.5em;
+}
+.temperature {
+    width: 110px;
+    text-align: center;
+    font-family: Lato Regular (400);
+    font-size: 2em;
+}
+.weather {
+    width: 120px;
+    height: 200px;
+}
+.weather:hover{
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

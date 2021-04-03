@@ -1,0 +1,23 @@
+.block {
+    background-color: rgb(124, 120, 120);
+    padding: 10px;
+    border: 1px solid red;
+}
+.title {
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 5px;
+}
+.el {
+    background-color: rgb(66, 72, 94);
+    margin: 5px;
+    border: 1px solid red;
+    padding: 10px;
+}
+.el_title {
+    color: rgb(3, 105, 105);
+    font-weight: 350px;
+}
+.value {
+    color: green;
+}

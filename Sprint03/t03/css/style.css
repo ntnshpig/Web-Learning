@@ -1,0 +1,57 @@
+body, .upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upgrade {
+    padding: 20px 30px;
+    background-color:cadetblue;
+    border-radius: 5px;
+}
+.superhero_name {
+    margin-bottom: 10px;
+    font-size: large;
+}
+.some_info {
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+.not_dsp {
+    display: none;
+}
+.image_human {
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+}
+ 
+.image_superhero {
+    border-radius: 15px;
+    width: 250px;
+    height: 300px;
+}
+.btns{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.btns div {
+    margin: 5px 0px;
+}
+button {
+    font-size:15px;
+    border-style: none;
+    padding: 5px  10px;
+    border-radius: 5px;
+    background-color: turquoise;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    background-color: tomato;
+}
+.bottom button {
+    margin: 0px 5px;
+}

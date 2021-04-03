@@ -1,0 +1,35 @@
+body{
+    background:black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .circle{
+    width:60px;
+    height:60px;
+    background:cyan;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    animation: circle 6s linear infinite alternate;
+    overflow: hidden;
+    transition: background 2s ease-in-out;
+  }
+
+  .circle:hover {
+      background: red;
+  }
+
+  @keyframes circle{
+    0%{
+      margin-left: 0;
+    }
+    100%{
+      margin-left: 95%;
+    }
+  }
+  
+
+  

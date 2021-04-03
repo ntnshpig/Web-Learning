@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Handbook</title>
+        <meta name="viewport" content="t04. Handbook">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topic_name"><h1>HTML</h1></div>
+        <div class="topic">
+            <div class="subtopic">
+                <h4>&#60;div&#62;</h4>
+                <p>The &#60;div&#62;  tag is an empty container that is used to define 
+                a division or a section. It does not affect the content or layout 
+                and is used to group HTML elements to be styled with CSS or manipulated 
+                with scripts.</p>  
+                <h4>Syntax</h4>
+                &#60;div&#62;Name&#60;div&#62;
+                <h4>Example</h4>
+                <div>Hello</div>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;h1&#62;</h4>
+                The &#60;h1&#62; to &#60;h6&#62; elements are used to define six levels of HTML 
+                Headings, with &#60;h1&#62; being the highest (or most important) level 
+                and &#60;h6&#62; the least important one.
+                <h4>Syntax</h4>
+                &#60;h1&#62;Text&#60;/h1&#62;
+                <h4>Example</h4>
+                <h1 class="example">Hello</h1>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;hr&#62;</h4>
+                The &#60;hr&#62;  tag is a block-level element 
+                transferring all the elements after it to another line. 
+                The external look of the horizontal line defined by the 
+                tag depends on the type of the browser. More often it is 
+                displayed with a border, which creates 3D effect.
+                <h4>Syntax</h4>
+                &#60;hr/&#62;
+                <h4>Example</h4>
+                <hr>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;p&#62;</h4>
+                The &#60;p&#62;  tag defines a paragraph of text. 
+                It is a block-level element and always starts on a new line. 
+                Before and after each paragraph, browsers add margin automatically. 
+                You can modify the margins using the CSS margin property .
+                <h4>Syntax</h4>
+                &#60;p&#62;Hello&#60;/p&#62;
+                <h4>Example</h4>
+                <p>I'm paragraph</p>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;b&#62;</h4>
+                According to the HTML5 specification, the &#60;b&#62; tag should be 
+                used as a LAST resort when no other tag is more appropriate.
+                <h4>Syntax</h4>
+                &#60;b&#62;Bold Text&#60;/b&#62;
+                <h4>Example</h4>
+                <b>Bold Text</b>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;a&#62;</h4>
+                The &#60;a&#62; tag is used to insert hyperlinks 
+                to other pages, or files, locations within the same page, 
+                email addresses, or any different URL. You can use both text 
+                and image as a hyperlink.
+                <h4>Syntax</h4>
+                &#60;a href="https://google.com/"&#62;Click me&#60;/a&#62;
+                <h4>Example</h4>
+                <a href="###">I'm link leading nowhere</a>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;abbr&#62;</h4>
+                The HTML &#60;abbr&#62; tag defines an abbreviation or an acronym,
+                like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". 
+                Marking abbreviations can give useful information to browsers, 
+                translation systems and search-engines.
+                <h4>Syntax</h4>
+                &#60;abbr title="World Health Organization"&#62;WHO&#60;/abbr&#62;
+                <h4>Example</h4>
+                <abbr title="World Health Organization">WHO</abbr>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;span&#62;</h4>
+                An inline element does not start on a new line. 
+                An inline element only takes up as much width as necessary.
+                <h4>Syntax</h4>
+                &#60;span&#62;Text&#60;/span&#62;
+                <h4>Example</h4>
+                <span>Hello World</span>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;pre&#62;</h4>
+            The &#60;pre&#62; is used to insert a preformatted text into an HTML document. 
+            The spaces and line breaks in the text are preserved. The &#60;pre&#62; tag 
+            is usually used to display code, or a text (for example, a poem), where 
+            the author himself sets the location of the lines relative to each other. 
+            Text in a &#60;pre&#62; element is shown in a fixed-width font.
+            The tag content is displayed in the browser in a monospace font.
+            <h4>Syntax</h4>
+            &#60;pre&#62;Hello&#60;/pre&#62;
+            <h4>Example</h4>
+            <pre>Hello</pre>
+            </div>
+            <div class="subtopic">
+                <h4>&#60;footer&#62;</h4>
+                The &#60;footer&#62; tag defines the footer of a web page 
+                or a section. Usually, it contains copyright information, contact details, 
+                navigation links, etc.
+                You can have several &#60;footer&#62; tags on a web page. For example, you can 
+                place a footer inside the &#60;article&#62; tag to store information related to 
+                the article (links, footnotes, etc.).
+                The tag can contain other HTML elements, except for the &#60;footer&#62; 
+                and &#60;header&#62; tags.
+                <h4>Syntax</h4>
+                &#60;footer&#62;Hello&#60;/footer&#62;
+                <h4>Example</h4>
+                <footer>I'm footer</footer>
+            </div>
+        </div>
+        <div class="topic_name"><h1>CSS</h1></div>
+        <div class="topic">
+            <div class="subtopic">
+                <h4>border</h4>
+                The border property is a shorthand property for:
+                <ul>
+                    <li>border-width</li>
+                    <li>background-style</li>
+                    <li>background-color</li>
+                </ul>
+                If border-color is omitted, the color applied will be the color of the text.
+                <h4>Syntax</h4>
+                <p>border: border-width border-style border-color|initial|inherit; </p> 
+                <h4>Example</h4>
+                <p style="border: 2px solid blue;">I'm blue border!</p>
+            </div>
+            <div class="subtopic">
+                <h4>background</h4>
+                    The background property is a shorthand property for:
+                <ul>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-position</li>
+                    <li>background-size</li>
+                    <li>background-repeat</li>
+                    <li>background-origin</li>
+                    <li>background-clip</li>
+                    <li>background-attachment</li>
+                </ul>
+                    It does not matter if one of the values above are missing.
+                <h4>Syntax</h4>
+                <p>background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+                </p> 
+                <h4>Example</h4>
+                <p style="background-color: blue;">I'm blue!</p>
+            </div>
+            <div class="subtopic">
+                <h4>color</h4>
+                Sets the color of text
+                The color property specifies the color of text.
+                <h4>Syntax</h4>
+                <p>color: color_name|initial|inherit; </p> 
+                <h4>Example</h4>
+                <p style="color: green;">Green color!</p>
+            </div>
+            <div class="subtopic">
+                <h4>font-family</h4>
+                The font-family property specifies the font for an element. 
+                There are two types of font family names:
+                <ul>
+                    <li>family-name</li>
+                    <li>generic-family </li>
+                </ul>
+                The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.
+                <h4>Syntax</h4>
+                <p>font-family: family-name|generic-family|initial|inherit; </p> 
+                <h4>Example</h4>
+                <p style="font-family:Arial, Helvetica, sans-serif;">Arial text</p>
+            </div>
+            <div class="subtopic">
+                <h4>text-decoration</h4>
+                The text-decoration property specifies the decoration added to text, and is a shorthand property for:
+                <ul>
+                    <li>text-decoration-line (required)</li>
+                    <li>text-decoration-color</li>
+                    <li>text-decoration-style</li>
+                </ul>
+                <h4>Syntax</h4>
+                <p>text-decoration: text-decoration-line text-decoration-color text-decoration-style|initial|inherit;</p> 
+                <h4>Example</h4>
+                <p style="text-decoration:overline;">Overline text!</p>
+            </div>
+            <div class="subtopic">
+                <h4>font-size</h4>
+                The font-size property sets the size of a font.
+                <h4>Syntax</h4>
+                <p>font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;</p> 
+                <h4>Example</h4>
+                <p style="font-size:large;">Large text!</p>
+            </div>
+            <div class="subtopic">
+                <h4>font-variant</h4>
+                In a small-caps font, all lowercase letters are converted to uppercase letters.
+                 However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+                 The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+                <h4>Syntax</h4>
+                <p>font-variant: normal|small-caps|initial|inherit;</p> 
+                <h4>Example</h4>
+                <p style="font-variant: small-caps;">Small-caps text!</p>
+            </div>
+            <div class="subtopic">
+                <h4>font-weight</h4>
+                The font-weight property sets how thick or thin characters in text should be displayed.
+                <h4>Syntax</h4>
+                <p>font-weight: normal|bold|bolder|lighter|number|initial|inherit;</p> 
+                <h4>Example</h4>
+                <p style="font-weight: bolder;">Bolder text!</p>
+            </div>
+            <div class="subtopic">
+                <h4>font-style</h4>
+                The font-style property specifies the font style for a text.
+                <h4>Syntax</h4>
+                <p>font-style: normal|italic|oblique|initial|inherit;</p> 
+                <h4>Example</h4>
+                <p style="font-style:oblique;">Oblique text!</p>
+            </div>
+            <div class="subtopic">
+                <h4>cursor</h4>
+                The cursor property specifies the mouse cursor to be displayed when pointing over an element.
+                <h4>Syntax</h4>
+                <p>cursor: value; </p> 
+                <h4>Example</h4>
+                <p style="cursor:cell;">Point at me!</p>
+            </div>
+        </div>
+        <div class="topic_name"><h1>Protocols</h1></div>
+        <div class="topic">
+            <div class="subtopic">
+                <h4>Domain Name System (DNS)</h4>
+                <p>The domain name system (DNS) gives us humans an easy way to identify where we want to go on the Internet.
+                </p>
+                <p>A domain name is a human-friendly address for a website, something that's easy for us to remember and type in.</p>
+                <h4>Anatomy of a domain name</h4>
+                <p>Each domain name is made up of parts:
+                    third-level-domain.second-level-domain.top-level-domain
+                    There are a limited set of top level domains (TLDs), and many 
+                    websites use the most common TLDs,".com", ".org", and ".edu".
+                    The third level domain is also called a subdomain, because it's owned by 
+                    the same group and that URL often directs you to a subset of the website, 
+                    like "m.wikipedia.org" (mobile-optimized Wikipedia) or "es.khanacademy.org" 
+                    (Spanish-language Khan Academy).
+                </p>
+                <p>Behind the scenes, each domain name maps to an IP address. 
+                    When we type a URL in the address bar of our browser, the 
+                    computer has to figure out its IP address.
+                </p>
+                <p>The computer can't store a database of more than 300 million 
+                    domain names locally, so it goes through a multi-step process 
+                    to find out the IP address.
+                </p>
+            </div>
+            <div class="subtopic">
+                <h4>Hypertext Transfer Protocol (HTTP)</h4>
+                <p>Whenever you visit a page on the web, your computer uses the Hypertext Transfer Protocol 
+                    (HTTP) to download that page from another computer somewhere on the Internet.</p>
+                <p> HTTP is a protocol that's built on top of the TCP/IP protocols.
+                    Each HTTP request is inside an IP packet, and each HTTP response is 
+                    inside another IP packet--or 
+                    more typically, multiple packets, since the response data can be quite large.</p>
+                <p>There are many other protocols built on top of TCP/IP, 
+                    like protocols for sending email (SMTP, POP, IMAP) and uploading files (FTP).
+                    All of these protocols enable us to use the Internet to connect with 
+                    other computers in useful ways, and to communicate and collaborate 
+                    across wide distances.</p>
+              </div>
+            <div class="subtopic">
+                <h4>Hyper Text Transfer Protocol Secure (HTTPS)</h4>
+                <p>Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, 
+                    the protocol over which data is sent between your browser and the website 
+                    that you are connected to. The 'S' at the end of HTTPS stands for 'Secure'. 
+                    It means all communications between your browser and the website are 
+                    encrypted. HTTPS is often used to protect highly confidential online 
+                    transactions like online banking and online shopping order forms.
+                <p> To understand why HTTPS protocol, we first should know how wi-fi 
+                    routers function.Let's say you are at an airport and you are connecting 
+                    to the wi-fi which is the property of a third party. Now, when you are 
+                    communicating over HTTP, the text is being transferred by their router. 
+                    And if I go to a low version of the router, I can comfortably check and 
+                    read the text that is being transferred. There could be a password that 
+                    I can use to login to your bank site and do a fraudulent transaction!. 
+                    Point being - 
+                    this is fundamentally insecure. This is called the man in the middle attack. 
+                    And this why do we need https when HTTP seems to suffice.
+                    Now, to save our data from such attacks, we need to encrypt that data.
+                </p>
+            </div>
+            <div class="subtopic">
+                <h4>DNS Records</h4>
+                <ul>
+                    <li><b>3 types of DNS queries</b> — recursive, iterative, and non-recursive</li>
+                    <li><b>3 types of DNS servers</b> — DNS Resolver, DNS Root Server and Authoritative Name Server</li>
+                    <li><b>10 types of common DNS records</b> — including A, AAAA, CNAME, MX and NS</li>
+                </ul>
+                <h3>DNS Types: 10 Top DNS Record Types</h3>
+                <p>DNS servers create a DNS record to provide important information about 
+                    a domain or hostname, particularly its current IP address. The most common DNS record types are:        </p>
+                <ul>
+                    <li>Address Mapping record (A Record)—also known as a DNS host record, stores a hostname and its corresponding IPv4 address.</li>
+                    <li>IP Version 6 Address record (AAAA Record)—stores a hostname and its corresponding IPv6 address.</li>
+                    <li>Canonical Name record (CNAME Record)—can be used to alias a hostname to another hostname. When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname.            </li>
+                    <li>Mail exchanger record (MX Record)—specifies an SMTP email server for the domain, used to route outgoing emails to an email server.</li>
+                    <li>Name Server records (NS Record)—specifies that a DNS Zone, such as “example.com” is delegated to a specific Authoritative Name Server, and provides the address of the name server.            </li>
+                    <li>Reverse-lookup Pointer records (PTR Record)—allows a DNS resolver to provide an IP address and receive a hostname (reverse DNS lookup).</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
