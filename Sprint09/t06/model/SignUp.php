@@ -1,9 +1,8 @@
 
 <?php
-    include "Model.php";
+    require_once "Model.php";
 
-    class Users extends Model {
-        public $id = null;
+    class SignUp  extends Model {
         public $login;
         public $email;
         public $password;
@@ -12,6 +11,7 @@
         public function __construct() {
             parent::__construct("users");
         }
+
         public function sign_up($login, $email, $password, $repeat, $name) {
             if ($this->db_new->getConnectionStatus() == true) {
                 $newTable = $this->db_new->db_connection->query("SELECT id, login FROM " . $this->table . " WHERE login = '" . $login . "' or " . " email_address = '" . $email . "';");
@@ -26,12 +26,16 @@
                                         ":email_address"  => $email,
                                         ":password" => $pass,
                                         ":name" => $name,
-                                        ":status_admin" => 1));
+                                        ":status_admin" => 0));
+                    $this->login = $login;
+                    $this->password = $password;
+                    $this->email = $email;
+                    $this->name = $name;
+                    $_SESSION['status'] = 0;
                     return true;
                 }
             }
             return false;
         }
     }
-
 ?>

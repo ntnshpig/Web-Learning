@@ -1,27 +1,38 @@
 <?php
     function autoload($pClassName) { 
-        include(__DIR__. '\/models/' . $pClassName. '.php'); 
+        include(__DIR__. "/models/" . $pClassName. '.php'); 
     }
     spl_autoload_register("autoload");
+
     session_start();
 
-    include 'connection/DatabaseConnection.php';
+    echo file_get_contents("index.html");
 
-    if(isset($_POST['sign_up'])) {
-        if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['repeat']) 
-        && isset($_POST['real_name']) && isset($_POST['email']) && isset($_POST['repeat'])){
-            $user = new Users;
-            $user->save($_POST['login'], $_POST['email'], $_POST['password'], $_POST['repeat'], $_POST['real_name']);
+    
+    $user = new Users();
+
+    if(isset($_POST['sign_in'])) {
+        if($user->sign_in($_POST['login'], $_POST['password'])) {
+            $stat = $_SESSION['status'] ? "enable" : "disable";
+            echo '<script>
+                    document.querySelector(".logout_form").style.display = "flex";
+                    document.querySelector(".sign_in_form").style.display = "none";
+                    let status = document.querySelector(".status");
+                    status.innerHTML = "Admin status: ' . $stat . '";
+                    let msg = document.querySelector(".msg_in");
+                    msg.innerHTML = "Enter succeed";
+                    msg.style.color = "green";
+                </script>';
+        } else {
+            echo '<script>
+                    let msg = document.querySelector(".msg");
+                    msg.innerHTML = "Enter failde";
+                    msg.style.color = "red";
+                </script>';
         }
     }
-    if(isset($_POST['sign_in'])) {
-        if(isset($_POST['login']) && isset($_POST['password'])){
-            $user = new Users;
-            if($user->sign_in($_POST['login'], $_POST['password'])) {
-                
-            } else {
-
-            }
-        }
+    if(isset($_POST['logout'])) {
+        unset($_SESSION['status']);
+        session_destroy();
     }
 ?>

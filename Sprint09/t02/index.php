@@ -6,18 +6,18 @@
 
     echo file_get_contents("index.html");
 
-    if(isset($_POST['sign_up'])) {
+    if(isset($_POST['remind_pass'])) {
         $user = new Users();
-        if($user->sign_up($_POST['login'], $_POST['email'], $_POST['password'], $_POST['repeat'], $_POST['real_name'])){
+        if($user->remind_pass($_POST['login'])) {
             echo '<script>
                     let msg = document.querySelector(".msg");
-                    msg.innerHTML = "Registration succeed";
+                    msg.innerHTML = "Send u a message";
                     msg.style.color = "green";
                 </script>';
         } else {
             echo '<script>
                     let msg = document.querySelector(".msg");
-                    msg.innerHTML = "Registration failde";
+                    msg.innerHTML = "Message failde";
                     msg.style.color = "red";
                 </script>';
         }

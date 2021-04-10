@@ -1,9 +1,9 @@
 CREATE DATABASE IF NOT EXISTS sword;
-
 CREATE USER 'ashpigunov'@'localhost' IDENTIFIED WITH mysql_native_password BY 'securepass';
-GRANT all privileges ON ucode_web . * to 'ashpigunov'@'localhost';
+GRANT all privileges ON sword . * to 'ashpigunov'@'localhost';
 FLUSH PRIVILEGES;
 
+use sword;
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     login VARCHAR(50) NOT NULL UNIQUE KEY,

@@ -1,5 +1,5 @@
   
-function checkPswd() {
+function check_pass() {
 
     let pswd = document.getElementById('input_password');
     let conf_pswd = document.getElementById('input_repeat');

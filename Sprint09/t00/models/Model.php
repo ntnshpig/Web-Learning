@@ -1,5 +1,5 @@
 <?php
-    include '../connection/DatabaseConnection.php';
+    include __DIR__.'/../connection/DatabaseConnection.php';
 
     abstract class Model {
         public function __construct($table) {
@@ -12,9 +12,9 @@
         }
 
         public function setConnection() {
-            $this->db_new = new DatabaseConnection('127.0.0.1', null, "ashpigunov", "securepass", "ucode_web");
+            $this->db_new = new DatabaseConnection('127.0.0.1', null, "ashpigunov", "securepass", "sword");
         }
         
-        abstract protected function save($login, $email, $password, $repeat, $name);
+        abstract protected function sign_up($login, $email, $password, $repeat, $name);
     }
 ?>

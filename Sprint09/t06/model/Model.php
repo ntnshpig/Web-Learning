@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/../connection/DatabaseConnection.php';
+    require_once __DIR__.'/connection/DatabaseConnection.php';
 
     abstract class Model {
         public function __construct($table) {

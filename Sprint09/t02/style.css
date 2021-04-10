@@ -22,7 +22,7 @@ main {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-.sign_up_form {
+.register_form {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -31,7 +31,7 @@ main {
     font-weight: 300;
 }
 
-.sign_up_form input {
+.register_form input {
     margin: 10px 5px;
 }
 input[type="text"], input[type="password"], input[type="email"] {
