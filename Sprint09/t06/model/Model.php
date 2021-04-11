@@ -13,6 +13,7 @@
 
         public function setConnection() {
             $this->db_new = new DatabaseConnection('127.0.0.1', null, "ashpigunov", "securepass", "sword");
+            if(!$this->db_new->getConnectionStatus()) echo "<script>window.location.href = '404.html';</script>";
         }
     }
 ?>
